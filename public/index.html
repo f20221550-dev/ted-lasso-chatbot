@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano Coach — Ted Lasso Vibes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header-badge">⚽ 🎹</div>
+        <h1>Piano Practice Coach</h1>
+        <p class="subtitle">Accountability with heart, dad jokes, and belief in you.</p>
+      </header>
+
+      <main class="chat-panel">
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <form id="chat-form" class="input-row">
+          <label for="user-input" class="sr-only">Your message</label>
+          <textarea
+            id="user-input"
+            rows="2"
+            placeholder="Tell me how practice went…"
+            autocomplete="off"
+          ></textarea>
+          <button type="submit" id="send-btn">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
